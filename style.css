@@ -1,0 +1,394 @@
+:root {
+  --primary-color: #777;
+  --secondary-color: #fff;
+  --cta-color: #666;
+  --background-color: #1a1a1a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "IBM Plex Serif", serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+/* LOGO */
+.logo {
+  padding: 2.4rem;
+  margin: 3.4rem;
+  text-align: center;
+}
+.logo h1 {
+  color: var(--primary-color);
+  font-size: 4.4rem;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+.logo p {
+  font-size: 1.6rem;
+}
+
+.logo h1 span {
+  display: inline-block;
+  height: 5.2rem;
+  width: 5.2rem;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+}
+
+/* NAVBAR */
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+}
+
+.navbar a:link,
+.navbar a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 2.4rem 4.8rem;
+  border-left: 1px solid var(--primary-color);
+  transition: all 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+}
+/* MISTAKE */
+.navbar li:first-child {
+  border: none;
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+.button ion-icon {
+  color: var(--primary-color);
+}
+.button {
+  background-color: var(--secondary-color);
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 20%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-left {
+  left: 0;
+  top: 50%;
+  transform: translate(10%, -50%);
+}
+.btn-right {
+  right: 0;
+  top: 50%;
+  transform: translate(-10%, -50%);
+}
+h2 {
+  font-size: 3.6rem;
+  padding: 2.4rem 4.8rem;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  text-align: center;
+  margin: 0;
+}
+
+/* DISPLAY  */
+.display {
+  display: flex;
+  gap: 2.4rem;
+  padding: 1.8rem 2.4rem;
+}
+.display-box {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.two-box {
+  display: flex;
+  gap: 2.4rem;
+}
+.display div p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+img {
+  width: 100%;
+}
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+}
+.img-box img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.2rem 3.2rem;
+  background-color: var(--cta-color);
+  color: var(--secondary-color);
+  /* Only for btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  color: var(--cta-color);
+  background-color: var(--secondary-color);
+  box-shadow: inset 0 0 0 1.5px var(--cta-color);
+}
+
+/* FEATURES */
+
+.features-section {
+  background-color: #eee;
+}
+
+.features {
+  display: flex;
+  gap: 4.8rem;
+  padding: 2.4rem;
+}
+
+.feature-box {
+  padding: 2.4rem;
+}
+
+.feature-box h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  font-size: 400;
+  display: flex;
+  align-items: center;
+  max-width: 20ch;
+}
+
+.feature-box p {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.icon {
+  font-size: 6.2rem;
+  padding: 1.2rem;
+}
+.feature-box a {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.btn-read:link,
+.btn-read:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--cta-color);
+  /* Only for btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn-read:hover,
+.btn-read:active {
+  color: #999;
+}
+
+.forward {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5em;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  padding: 4.8rem 2.4rem;
+  gap: 3.2rem;
+}
+.test-box {
+  max-width: 30rem;
+}
+.testimonials h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+}
+.advantages-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.advantages-box h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  font-size: 4.4rem;
+  margin-bottom: 2.4rem;
+  background-color: var(--cta-color);
+  color: var(--secondary-color);
+}
+.advantages-box p {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.useful-box ul {
+  list-style: none;
+}
+
+.useful-box ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.useful-box ion-icon {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.testimonials p {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.btn-test:link,
+.btn-test:visited {
+  background-color: #eee;
+  color: #777;
+}
+.btn-test:hover,
+.btn-test:active {
+  box-shadow: none;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 2.4rem;
+}
+.logo-footer {
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.logo-footer span {
+  display: inline-block;
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+}
+
+.copyright {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.social-links ul {
+  display: flex;
+  gap: 2.4rem;
+  width: 18rem;
+  margin: 0 auto;
+}
+.social-links ul li ion-icon {
+  font-size: 2.4rem;
+}
+
+@media (max-width: 900px) {
+  .display {
+    flex-wrap: wrap;
+  }
+
+  .testimonials {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 650px) {
+  .features {
+    flex-wrap: wrap;
+  }
+  .feature-box {
+    padding: 0 2.4rem 2.4rem 2.4rem;
+  }
+  .two-box {
+    flex-wrap: wrap;
+  }
+  .test-box {
+    margin-bottom: 3.2rem;
+  }
+}
